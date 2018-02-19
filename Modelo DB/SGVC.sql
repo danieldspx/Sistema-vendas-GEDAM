@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 18, 2018 at 11:32 PM
--- Server version: 5.7.21-0ubuntu0.16.04.1
--- PHP Version: 7.0.22-0ubuntu0.16.04.1
+-- Tempo de geração: 19/02/2018 às 01:06
+-- Versão do servidor: 5.7.21-0ubuntu0.16.04.1
+-- Versão do PHP: 7.0.22-0ubuntu0.16.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `SGVC`
+-- Banco de dados: `SGVC`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `itens`
+-- Estrutura para tabela `itens`
 --
 
 CREATE TABLE `itens` (
@@ -38,7 +38,7 @@ CREATE TABLE `itens` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `staff`
+-- Estrutura para tabela `staff`
 --
 
 CREATE TABLE `staff` (
@@ -51,7 +51,7 @@ CREATE TABLE `staff` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `transacoes`
+-- Estrutura para tabela `transacoes`
 --
 
 CREATE TABLE `transacoes` (
@@ -63,7 +63,7 @@ CREATE TABLE `transacoes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Triggers `transacoes`
+-- Gatilhos `transacoes`
 --
 DELIMITER $$
 CREATE TRIGGER `remove_itensqtd` AFTER INSERT ON `transacoes` FOR EACH ROW BEGIN
@@ -73,23 +73,23 @@ $$
 DELIMITER ;
 
 --
--- Indexes for dumped tables
+-- Índices de tabelas apagadas
 --
 
 --
--- Indexes for table `itens`
+-- Índices de tabela `itens`
 --
 ALTER TABLE `itens`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `staff`
+-- Índices de tabela `staff`
 --
 ALTER TABLE `staff`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `transacoes`
+-- Índices de tabela `transacoes`
 --
 ALTER TABLE `transacoes`
   ADD PRIMARY KEY (`id`,`itens_id`,`staff_id`),
@@ -97,30 +97,30 @@ ALTER TABLE `transacoes`
   ADD KEY `fk_transacoes_staff1_idx` (`staff_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de tabelas apagadas
 --
 
 --
--- AUTO_INCREMENT for table `itens`
+-- AUTO_INCREMENT de tabela `itens`
 --
 ALTER TABLE `itens`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `staff`
+-- AUTO_INCREMENT de tabela `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `transacoes`
+-- AUTO_INCREMENT de tabela `transacoes`
 --
 ALTER TABLE `transacoes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- Constraints for dumped tables
+-- Restrições para dumps de tabelas
 --
 
 --
--- Constraints for table `transacoes`
+-- Restrições para tabelas `transacoes`
 --
 ALTER TABLE `transacoes`
   ADD CONSTRAINT `fk_transacoes_itens` FOREIGN KEY (`itens_id`) REFERENCES `itens` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
