@@ -1,0 +1,10 @@
+Options All -Indexes
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+# Acesso restrito!
+order deny,allow
+deny from all
+allow from 216.172.172.220/223

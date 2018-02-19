@@ -1,0 +1,41 @@
+body{
+    background: -webkit-radial-gradient(circle, #ffffff, #f7f7f7, #ecf0f1); 
+    background: -o-radial-gradient(circle, #ffffff, #f7f7f7, #ecf0f1);
+    background: -moz-radial-gradient(circle, #ffffff, #f7f7f7, #ecf0f1);
+    background: radial-gradient(circle, #ffffff, #f7f7f7, #ecf0f1); 
+}
+.deleteIcon,.saveIcon{
+    font-size: 30px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: left;
+}
+.deleteIcon{
+    color: #ff5252;
+}
+.saveIcon{
+    color: #03a9f4;
+}
+.addItem{
+    color: #4caf50;
+    font-size: 40px;
+    cursor: pointer;
+}
+.cfontblack{
+    color: black;
+}
+.mr20{
+    margin-right: 20px;
+}
+.logout{
+    position: fixed;
+    margin-top: 0px;
+    width: auto;
+    right: 10px;
+}
+.topButton{
+
+}
+.sp-replacer,.sp-light{
+    margin-top: 10px;
+}

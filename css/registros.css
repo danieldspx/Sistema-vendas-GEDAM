@@ -1,0 +1,28 @@
+body{
+    background: -webkit-radial-gradient(circle, #ffffff, #f7f7f7, #ecf0f1); 
+    background: -o-radial-gradient(circle, #ffffff, #f7f7f7, #ecf0f1);
+    background: -moz-radial-gradient(circle, #ffffff, #f7f7f7, #ecf0f1);
+    background: radial-gradient(circle, #ffffff, #f7f7f7, #ecf0f1); 
+}
+.cfontblack{
+    color: black;
+}
+.logout{
+    position: fixed;
+    margin-top: 0px;
+    width: auto;
+    right: 10px;
+}
+table.striped>tbody>tr:nth-child(odd){
+    background-color: #b3e5fc;
+}
+thead{
+    font-weight: 900;
+}
+.delete{
+    color: #ff1744;
+    cursor: pointer;
+}
+.cloudIcon{
+    font-size: 3em;
+}

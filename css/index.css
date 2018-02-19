@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "UNI SANS";
+    src: url("../fonts/added/Uni Sans Heavy.otf")
+}
+
+@font-face {
+    font-family: "SIMPLIFICA";
+    src: url("../fonts/added/SIMPLIFICA.ttf")
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf")
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(65deg, #FF9001 0, #EE2E5D 75%);
+}
+
+.login {
+    background-color: white;
+    position: relative;
+    margin-left: 35%;
+    width: 30% !important;
+    height: auto;
+    display: inline-block;
+}
+
+.login-form {
+    padding: 10px;
+    position: relative;
+    display: block;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.btn {
+    display: block;
+    margin-bottom: 15px;
+    position: relative;
+    width: 80%;
+    left: 10%;
+    color: #333;
+}
+
+.center {
+    text-align: center;
+}
+
+.titulo{
+    font-family: 'SIMPLIFICA',sans-serif;
+    font-size: 150px;
+    margin: 25px 0px 5px 0px;
+    font-weight: 400;
+    color: white; 
+}
+
+.subtitulo{
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px 0px;
+    margin-bottom: 30px;
+    color: white;
+    border: none;
+    border-bottom-color: rgba(255,255,255,0.4);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding: 0px 15px 3px 15px;
+}
